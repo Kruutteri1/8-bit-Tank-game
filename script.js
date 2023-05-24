@@ -1,5 +1,4 @@
 let bullets = [];
-let bullets2 = [];
 
 const obstacles = document.querySelectorAll('.obstacle2');
 const obstaclesWater = document.querySelectorAll('.water');
