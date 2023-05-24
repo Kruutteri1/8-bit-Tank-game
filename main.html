@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>8-Bit Tank Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="gameContainer">
+    <div id="elementsContainer">
+        <div id="tank"></div>
+        <div id="tankSecond"></div>
+
+
+
+        <canvas id="gameCanvas" width="520" height="520"></canvas>
+        <div class="breakable obstacle2 obstacle3" style="top: 0px; left: 480px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 160px; left: 320px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 80px; left: 240px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 320px; left: 360px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 360px; left: 360px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 360px; left: 400px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 360px; left: 440px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 400px; left: 360px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 200px; left: 120px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 280px; left: 0px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 360px; left: 40px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 400px; left: 40px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 440px; left: 40px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 360px; left: 80px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 360px; left: 120px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 440px; left: 120px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 480px; left: 120px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 80px; left: 0px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 280px; left: 280px;"></div>
+
+        <div class="breakable obstacle2 obstacle3" style="top: 480px; left: 360px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 480px; left: 400px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 480px; left: 440px;"></div>
+
+
+        <div class="breakable obstacle2 obstacle3" style="top: 480px; left: 280px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 440px; left: 280px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 440px; left: 240px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 440px; left: 200px;"></div>
+        <div class="breakable obstacle2 obstacle3" style="top: 480px; left: 200px;"></div>
+
+
+        <div class="obstacle2" style="top: 240px; left: 360px;"></div>
+        <div class="obstacle2" style="top: 280px; left: 40px;"></div>
+        <div class="obstacle2" style="top: 80px; left: 80px;"></div>
+
+        <div class="obstacle2" style="top: 360px; left: 320px;"></div>
+        <div class="obstacle2" style="top: 360px; left: 200px;"></div>
+
+
+        <div class="water obstacle2" style="top: 40px; left: 440px;"></div>
+        <div class="water obstacle2" style="top: 40px; left: 360px;"></div>
+        <div class="water obstacle2" style="top: 40px; left: 400px;"></div>
+        <div class="water obstacle2" style="top: 80px; left: 440px;"></div>
+        <div class="water obstacle2" style="top: 120px; left: 440px;"></div>
+        <div class="water obstacle2" style="top: 160px; left: 440px;"></div>
+
+        <div class="water obstacle2" style="top: 40px; left: 280px;"></div>
+        <div class="water obstacle2" style="top: 80px; left: 280px;"></div>
+        <div class="water obstacle2" style="top: 120px; left: 280px;"></div>
+        <div class="water obstacle2" style="top: 120px; left: 320px;"></div>
+        <div class="water obstacle2" style="top: 120px; left: 360px;"></div>
+
+        <div class="water obstacle2" style="top: 280px; left: 480px;"></div>
+        <div class="water obstacle2" style="top: 280px; left: 440px;"></div>
+        <div class="water obstacle2" style="top: 280px; left: 400px;"></div>
+        <div class="water obstacle2" style="top: 280px; left: 360px;"></div>
+
+        <div class="water obstacle2" style="top: 0px; left: 200px;"></div>
+        <div class="water obstacle2" style="top: 40px; left: 200px;"></div>
+        <div class="water obstacle2" style="top: 80px; left: 200px;"></div>
+
+        <div class="water obstacle2" style="top: 160px; left: 200px;"></div>
+        <div class="water obstacle2" style="top: 160px; left: 160px;"></div>
+        <div class="water obstacle2" style="top: 160px; left: 120px;"></div>
+
+        <div class="water obstacle2" style="top: 240px; left: 120px;"></div>
+        <div class="water obstacle2" style="top: 240px; left: 80px;"></div>
+        <div class="water obstacle2" style="top: 240px; left: 40px;"></div>
+        <div class="water obstacle2" style="top: 240px; left: 0px;"></div>
+
+        <div class="water obstacle2" style="top: 40px; left: 120px;"></div>
+        <div class="water obstacle2" style="top: 40px; left: 80px;"></div>
+        <div class="water obstacle2" style="top: 40px; left: 40px;"></div>
+
+        <div class="water obstacle2" style="top: 80px; left: 40px;"></div>
+        <div class="water obstacle2" style="top: 120px; left: 40px;"></div>
+
+        <div class="water obstacle2" style="top: 360px; left: 280px;"></div>
+        <div class="water obstacle2" style="top: 360px; left: 240px;"></div>
+
+        <div class="water obstacle2" style="top: 320px; left: 200px;"></div>
+        <div class="water obstacle2" style="top: 280px; left: 200px;"></div>
+        <div class="water obstacle2" style="top: 240px; left: 200px;"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
