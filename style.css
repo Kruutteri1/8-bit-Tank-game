@@ -41,14 +41,6 @@
     transform: rotate(180deg);
 }
 
-.bullet {
-    width: 5px;
-    height: 5px;
-    background-color: #0f0;
-    position: absolute;
-}
-
-
 .bulletTop {
     width: 5px;
     height: 10px;
