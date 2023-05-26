@@ -19,7 +19,7 @@
 #tank {
     width: 40px;
     height: 40px;
-    background-image: url(tankImage.png);
+    background-image: url(images/tankImage.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 #tankSecond {
     width: 40px;
     height: 40px;
-    background-image: url(tankImage2.png);
+    background-image: url(images/tankImage2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 .obstacle2 {
     width: 39px;
     height: 39px;
-    background-image: url(block2.png);
+    background-image: url(images/block2.png);
     background-size: 40px 40px;
     position: absolute;
 }
@@ -66,7 +66,7 @@
 .water.obstacle2 {
     width: 40px;
     height: 40px;
-    background-image: url(blockWater.jpg);
+    background-image: url(images/blockWater.jpg);
     background-size: 40px 40px;
     position: absolute;
 }
@@ -74,7 +74,7 @@
 .breakable.obstacle2 {
     width: 39px;
     height: 39px;
-    background-image: url(block.png);
+    background-image: url(images/block.png);
     background-size: 40px 40px;
     position: absolute;
 }
