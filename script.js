@@ -323,7 +323,6 @@ function restartGame() {
 
 function shotEnemy(bullet, enemy) {
     if (collision(bullet, enemy)) {
-        // Remove bullet
         bullet.remove();
         const bulletIndex = bullets.indexOf(bullet);
         if (bulletIndex > -1) {
@@ -332,21 +331,46 @@ function shotEnemy(bullet, enemy) {
 
         if (enemy === tank) {
             lives -= 1;
-            tank.style.top = 480 + "px";
-            tank.style.left = 160 + "px";
+            if (lives === 0) {
+                tank.remove();
+            } else {
+                tank.style.top = 480 + "px";
+                tank.style.left = 160 + "px";
+            }
+            //replace image
+            const hearts = document.querySelectorAll("#sidebar .heart");
+            if (hearts.length > lives) {
+                hearts[lives].classList.remove("heart");
+                hearts[lives].classList.add("heatHeart");
+            }
         } else {
             secondLives -= 1;
-            tank2.style.top = 0 + "px";
-            tank2.style.left = 320 + "px";
+            if (secondLives === 0) {
+                tank2.remove();
+            } else {
+                tank2.style.top = 0 + "px";
+                tank2.style.left = 320 + "px";
+            }
+            // replace image
+            const hearts = document.querySelectorAll("#sidebarSecond .heart");
+            if (hearts.length > secondLives) {
+                hearts[secondLives].classList.remove("heart");
+                hearts[secondLives].classList.add("heatHeart");
+            }
         }
 
         if (enemy === tank2 && secondLives === 0) {
-            alert("Player 1 won!");
-            restartGame(); // reload page
+            setTimeout(function() {
+                alert("Player 1 won!");
+                restartGame(); // reload page
+            }, 1000);
         } else if (enemy === tank && lives === 0) {
-            alert("Player 2 won!");
-            restartGame();
+            setTimeout(function() {
+                alert("Player 2 won!");
+                restartGame(); // reload page
+            }, 1000);
         }
+
     }
 }
 
