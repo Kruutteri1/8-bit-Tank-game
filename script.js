@@ -13,6 +13,10 @@ let oldTop2;
 let canShot = true;
 let canShot2 = true;
 
+
+let lives = 3;
+let secondLives = 3;
+
 const tank = document.getElementById("tank");
 const tank2 = document.getElementById("tankSecond");
 
@@ -326,17 +330,23 @@ function shotEnemy(bullet, enemy) {
             bullets.splice(bulletIndex, 1);
         }
 
-        // Remove enemy tank
-        enemy.remove();
-
-        if (enemy === tank2) {
-            alert("Player 1 won!");
+        if (enemy === tank) {
+            lives -= 1;
+            tank.style.top = 480 + "px";
+            tank.style.left = 160 + "px";
         } else {
-            alert("Player 2 won!");
+            secondLives -= 1;
+            tank2.style.top = 0 + "px";
+            tank2.style.left = 320 + "px";
         }
-        
-        // Restart the game after alert
-        restartGame();
+
+        if (enemy === tank2 && secondLives === 0) {
+            alert("Player 1 won!");
+            restartGame(); // reload page
+        } else if (enemy === tank && lives === 0) {
+            alert("Player 2 won!");
+            restartGame();
+        }
     }
 }
 
