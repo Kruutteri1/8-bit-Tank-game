@@ -4,6 +4,8 @@ Description:
 Embark on a retro-inspired gaming adventure with "8-Bit Tank Mayhem" – a thrilling two-player tank combat experience that harks back to the golden age of pixelated gaming. 
 Engage in fast-paced battles where players control tanks using a single keyboard, pitting their skills against each other in an explosive arena.
 
+![image](https://github.com/user-attachments/assets/69bb82e3-c1d5-4ee3-a56a-e6ef82e38287)
+
 Key Features:
 
 Classic Controls: Grab a friend and challenge them to a showdown using a shared keyboard. Player one commands their tank using the W, S, A, D, and Space keys, while player two utilizes the arrow keys and Ctrl.
